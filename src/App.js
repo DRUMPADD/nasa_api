@@ -1,4 +1,5 @@
 import './App.css';
+import NASA_logo from './static/img/NASA_logo.png';
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Routes} from 'react-router-dom';
 import Epic from './pages/Epic';
@@ -11,6 +12,9 @@ function App() {
     <Router>
       <div className="App">
         <header>
+          <div className='img-content'>
+            <img src={NASA_logo} alt='Nasa logo' />
+          </div>
           <ul>
             <li>
               <Link to='/'>Principal</Link>
